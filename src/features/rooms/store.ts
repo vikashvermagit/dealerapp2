@@ -3,7 +3,11 @@ import type { RoomStore, Room } from './types';
 import { useAdminStore } from '../admin/store';
 
 export const useRoomStore = create<RoomStore>((set, get) => ({
-    rooms: {},
+    rooms: {
+        'inv-1': { id: 'inv-1', status: 'live', joinedAt: new Date().toISOString(), lastActivity: new Date().toISOString() },
+        'inv-2': { id: 'inv-2', status: 'live', joinedAt: new Date().toISOString(), lastActivity: new Date().toISOString() },
+        'inv-7': { id: 'inv-7', status: 'live', joinedAt: new Date().toISOString(), lastActivity: new Date().toISOString() },
+    },
 
     syncRoom: (invitationId: string) => {
         const { rooms } = get();

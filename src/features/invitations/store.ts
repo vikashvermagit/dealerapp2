@@ -40,6 +40,43 @@ const INITIAL_INVITATIONS: Invitation[] = [
         budget: '$55,000 - $65,000',
         expiresAt: new Date(Date.now() - 1000 * 60 * 10).toISOString(), // Expired 10 mins ago
         status: 'joined', // Set to joined for testing breach
+    },
+    {
+        id: 'inv-4',
+        customerName: 'Sarah Williams',
+        vehicleModel: 'Honda CR-V',
+        year: 2024,
+        budget: '$32,000 - $38,000',
+        expiresAt: new Date(Date.now() + 1000 * 60 * 120).toISOString(), // 2 hours from now
+        status: 'pending',
+    },
+    {
+        id: 'inv-5',
+        customerName: 'Michael Brown',
+        vehicleModel: 'BMW X5',
+        year: 2023,
+        budget: '$65,000 - $75,000',
+        expiresAt: new Date(Date.now() + 1000 * 60 * 180).toISOString(), // 3 hours from now
+        status: 'pending',
+    },
+    {
+        id: 'inv-6',
+        customerName: 'Emily Davis',
+        vehicleModel: 'Audi Q7',
+        year: 2024,
+        budget: '$70,000 - $85,000',
+        expiresAt: new Date(Date.now() + 1000 * 60 * 240).toISOString(), // 4 hours from now
+        status: 'pending',
+    },
+    {
+        id: 'inv-7',
+        customerName: 'James Wilson',
+        vehicleModel: 'Mercedes-Benz E-Class',
+        year: 2024,
+        budget: '$60,000 - $70,000',
+        expiresAt: new Date(Date.now() + 1000 * 60 * 60 * 5).toISOString(),
+        status: 'joined',
+        stockConsentCompleted: true,
     }
 ];
 

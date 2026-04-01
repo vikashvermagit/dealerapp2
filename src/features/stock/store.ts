@@ -33,6 +33,16 @@ export const useStockStore = create<StockStore>((set, get) => ({
             buyerConsentRequired: false,
             declaredAt: new Date(Date.now() - 1000 * 60 * 60 * 48).toISOString(),
             status: 'pending', // Will be picked up by checkDeadlines
+        },
+        'inv-7': {
+            id: 'stock-7',
+            invitationId: 'inv-7',
+            mode: 'in_stock',
+            vin: 'W1K1234567890ABCD',
+            buyerConsentRequired: false,
+            declaredAt: new Date().toISOString(),
+            status: 'verified',
+            verifiedAt: new Date().toISOString(),
         }
     },
 
